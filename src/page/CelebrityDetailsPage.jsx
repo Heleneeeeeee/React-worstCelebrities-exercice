@@ -5,6 +5,8 @@ const CelebritiesPage = () => {
 
     const {id} = useParams ()
 
+    // J'utilise la fonction useParams afin de matcher l'id du tableau avec l'id de mon url
+
     const celebrityfound = shittyStars.find((star) =>{
         return star.id == id;
     })

@@ -80,3 +80,5 @@ export const shittyStars = [
         isPickedByTeam: true,
     },
   ];
+
+// Je stocke la variable que je vais appeler dans les pages dont j'ai besoin

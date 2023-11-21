@@ -34,6 +34,7 @@ const HomePage = () => {
                 return (
                   <CelebrityCard starToDisplay= {star}/>
                 )
+ // Je fais appel à mon composant CelebrityCard afin d'éviter la répétion de mon code
         })}
             </section>
         </main>

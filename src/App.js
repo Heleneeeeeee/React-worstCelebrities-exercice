@@ -5,7 +5,7 @@ import CelebrityDetailsPage from "./page/CelebrityDetailsPage"
 import RandomCelebrityPage from "./page/RandomCelebrityPage";
 
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>

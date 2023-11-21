@@ -12,3 +12,4 @@ const CelebrityCard = ({starToDisplay}) => {
 
 export default CelebrityCard
 
+// Je crée un composant CelebrityCard que je vais pouvoir réutiliser dans plusieurs de mes pages
