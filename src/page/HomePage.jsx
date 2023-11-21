@@ -2,6 +2,7 @@ import { shittyStars } from "../utils/celebrities-utils";
 import CelebrityCard from "../component/CelebrityCard";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
+import "./HomePage.scss"
 
 const HomePage = () => {
 

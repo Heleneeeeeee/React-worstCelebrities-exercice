@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import { shittyStars } from "../utils/celebrities-utils";
-
+import "./CelebrityDetailsPage.scss";
+import Header from "../component/Header";
+import Footer from "../component/Footer";
 const CelebritiesPage = () => {
 
     const {id} = useParams ()
@@ -12,15 +14,21 @@ const CelebritiesPage = () => {
     })
 
     return (
+        <>
+        <Header />
         <main>
             <h2>Détail de cette célébrité</h2>
                 <article>
-                    <h3>{celebrityfound.name}</h3>
-                    <p>Sa Bio: {celebrityfound.bio}</p>
-                    <p><img src={celebrityfound.img} alt={celebrityfound.name} /></p>
-                    <p>Article publié le {celebrityfound.publishedAt}</p>
+                    <div className="card">
+                        <h3>{celebrityfound.name}</h3>
+                        <p><img src={celebrityfound.img} alt={celebrityfound.name} /></p>
+                        <p className="textBio"><span>Sa Bio:</span> <br />{celebrityfound.bio}</p>
+                        <p>Article publié le {celebrityfound.publishedAt}</p>
+                    </div>
                 </article>
         </main>
+        <Footer />
+        </>
     );
 }
 

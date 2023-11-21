@@ -1,0 +1,48 @@
+main {
+    background-color: #F4E5AA;
+    height: 630px;
+}
+
+h2 { 
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: rgb(255, 166, 0);
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    font-size: 1,3rem;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.card {
+    border: 1px solid black;
+    width:30%;
+    height: 400px;
+    background-color: #99D7CA;
+}
+
+img {
+    width: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.textBio, span {
+    font-size: 1.2rem;
+}
