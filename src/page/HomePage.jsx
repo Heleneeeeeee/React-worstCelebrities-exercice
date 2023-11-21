@@ -34,7 +34,7 @@ const HomePage = () => {
                 return (
                   <CelebrityCard starToDisplay= {star}/>
                 )
- // Je fais appel à mon composant CelebrityCard afin d'éviter la répétion de mon code
+ // Je fais appel à mon composant CelebrityCard afin d'éviter la répétion de mon code. J'utilise une props qui va me permettre de moduler ma fonction.
         })}
             </section>
         </main>

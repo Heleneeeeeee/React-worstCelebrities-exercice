@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import "./Header.scss";
+import Logo from './logo.png';
 
 
 const Header = () => {
     return (
         <header>
-            <h1>Les célébrités pétées</h1>
+            <h1>Les célébrités toutes pétées</h1>
             <nav>
                 <ul>
                 <Link to="/"><li>Home</li></Link>

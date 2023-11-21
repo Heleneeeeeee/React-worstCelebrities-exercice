@@ -13,7 +13,7 @@ ul {
     justify-content: flex-end;
 }
 
-a {
+a, li {
     color: white;
     text-decoration: none;
     list-style: none;
@@ -24,8 +24,10 @@ a {
 h1 {
     text-align: center;
     color: rgb(240, 237, 230);
+    padding-top: 20px;
 }
 
 .logo {
-    width: 100px;
+    width: 225px;
+    margin-right: 800px;
 }
