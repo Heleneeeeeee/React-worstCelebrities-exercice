@@ -11,7 +11,7 @@ const RandomCelebrityPage = () => {
     
       return (
         <>
-        <Header />
+        <Header pageTitle="random"/>
         <main>
             <section>
                 <h2>Célébrité random</h2>

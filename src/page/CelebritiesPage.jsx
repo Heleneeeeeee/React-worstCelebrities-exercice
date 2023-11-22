@@ -7,7 +7,7 @@ const CelebritiesPage = () => {
 
     return (
         <>
-        <Header />
+        <Header pageTitle="celebrities"/>
         <main>
             <section>
                 <h2>Toutes les célébrités les plus detestées</h2>

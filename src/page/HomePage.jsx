@@ -20,12 +20,12 @@ const HomePage = () => {
     return (
         <>
         <main>
-            <Header />
+            <Header pageTitle ="home"/>
             <section>
                 <h2>Les 5 célebritées publiées le plus récemment</h2>
                 {theLastFiveCelebritiesPublished.map((star) => {
                   return (
-                <CelebrityCard starToDisplay= {star}/>
+                <CelebrityCard starToDisplay= {star} />
                   )
         })}
             </section>
@@ -33,7 +33,7 @@ const HomePage = () => {
                 <h2>Les 3 célebritées choisies par la rédac</h2>
                 {theLastThreeCelebritiesPickedByTeam.map((star) =>{
                 return (
-                  <CelebrityCard starToDisplay= {star}/>
+                  <CelebrityCard starToDisplay= {star} />
                 )
  // Je fais appel à mon composant CelebrityCard afin d'éviter la répétion de mon code. J'utilise une props qui va me permettre de moduler ma fonction.
         })}
