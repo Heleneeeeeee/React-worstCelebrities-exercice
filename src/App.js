@@ -5,7 +5,7 @@ import CelebrityDetailsPage from "./page/CelebrityDetailsPage"
 import RandomCelebrityPage from "./page/RandomCelebrityPage";
 import TvSpeakersPage from "./page/TvSpeakersPage";
 import CopyrightPage from "./page/CopyrightPage";
-
+import FromMessagePage from "./page/FormMessagePage";
 
 const App = () => {
   return (
@@ -17,6 +17,7 @@ const App = () => {
         <Route path="/randompage" element={<RandomCelebrityPage />} />
         <Route path="/tvspeakerspage" element={<TvSpeakersPage />} />
         <Route path="/copyrightpage" element={<CopyrightPage />} />
+        <Route path="/formmessagepage" element={<FromMessagePage />} />
       </Routes>
     </BrowserRouter>
       
