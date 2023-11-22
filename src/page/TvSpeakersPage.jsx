@@ -7,7 +7,7 @@ const TvSpeakersPage = () => {
     const shittyTvSpeakers = [
         "Laurent Ruquier", "Pascal Praud", "Cyril Hanouna", "Jean-Marc Morandini", "Marc-Olivier Fogiel"
     ];
-
+    console.log(shittyTvSpeakers)
     return (
         <>
         <Header pageTitle="tvspeakers"/>

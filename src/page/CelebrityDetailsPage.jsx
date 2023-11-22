@@ -17,6 +17,8 @@ const CelebritiesPage = () => {
         <>
         <Header />
         <main>
+            {celebrityfound ? (
+            <>
             <h2>Détail de cette célébrité</h2>
                 <article>
                     <div className="card">
@@ -26,6 +28,10 @@ const CelebritiesPage = () => {
                         <p>Article publié le {celebrityfound.publishedAt}</p>
                     </div>
                 </article>
+            </>
+            ) : (
+            <p> Célébrité non trouvée</p>
+            )}
         </main>
         <Footer />
         </>

@@ -2,7 +2,7 @@
 const SpeakerCard = ({tvSpeakerName}) => {
 
     return (
-        <article>
+        <article className="speakers">
             <h3>Ce bon vieux {tvSpeakerName}</h3>
             <p>BLA BLA BLA BLA</p>
         </article>
