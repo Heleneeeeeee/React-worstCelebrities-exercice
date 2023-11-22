@@ -8,24 +8,25 @@ const Header = ({pageTitle}) => {
             <nav>
                 <ul>
                 {pageTitle == "home" ? (
-                <strong>
-                <Link to="/"><li>Home</li></Link>
-                </strong>) : (
+                <Link to="/"><li className="colormenu">Home</li></Link>
+                ) : (
                 <Link to="/"><li>Home</li></Link>)
                 }
                 {pageTitle == "celebrities" ? (
-                <strong>
-                <Link to="/celebritiespage"><li>Célébrités</li></Link>
-                </strong>) : (
+                <Link to="/celebritiespage"><li className="colormenu">Célébrités</li></Link>
+                ) : (
                 <Link to="/celebritiespage"><li>Célébrités</li></Link>)
                 }
                 {pageTitle == "random" ? (
-                <strong>
-                <Link to="/randompage"><li>Célébrité aléatoire</li></Link>
-                </strong>) : (
+                <Link to="/randompage"><li className="colormenu">Célébrité aléatoire</li></Link>
+                ) : (
                 <Link to="/randompage"><li>Célébrité aléatoire</li></Link>)
                 }
-                
+                {pageTitle == "tvspeakers" ? (
+                <Link to="/tvspeakerspage"><li className="colormenu">Présentateurs</li></Link>
+                ) : (
+                <Link to="/tvspeakerspage"><li>Présentateurs</li></Link>)
+                }
                 </ul>
             </nav>
         </header>
