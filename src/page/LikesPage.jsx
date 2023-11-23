@@ -3,16 +3,33 @@ import { useState } from "react";
 const LikesPage = () => {
 
     const [likes, setLikes] = useState (0)
+    const [displayMessage, setDisplayMessage] = useState(false)
 
     const handleLikesClick = () => {
-        setLikes(likes+1)
+        if (likes < 5){
+        setLikes(likes + 1);
+        } else {
+            setDisplayMessage(true)
+        }
+    }
+    const handleclosemessage = () => {
+        setDisplayMessage(0)
+
     }
 
     
     return (
         <main>
+            
+            {displayMessage == true && 
+            <div>
+            <p>Vous ne pouvez plus liker</p>
+            <button onClick={handleclosemessage}>Fermer</button>
+            </div>
+            }
+            
             <button onClick={handleLikesClick}>Like</button>
-            <p>Vous avez cliqueé {likes} fois</p>
+            <p>Vous avez cliqué {likes} fois</p>
         </main>
     )
 }
