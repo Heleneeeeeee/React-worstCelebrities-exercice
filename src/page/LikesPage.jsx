@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./HomePage.scss";
 
 const LikesPage = () => {
 
@@ -13,7 +14,7 @@ const LikesPage = () => {
         }
     }
     const handleclosemessage = () => {
-        setDisplayMessage(0)
+        setDisplayMessage(false)
 
     }
 
@@ -39,3 +40,4 @@ export default LikesPage;
 // Le hook useState permet de déclarer une variable initiale avec une fonction qui va modifier son état
 //setLikes ré-exécute la fonction et l'incrémente de 1 dans la variable handleLikesClick
 // Après chaque click,  la valeur de la variable est affichée dans la balise <p>
+

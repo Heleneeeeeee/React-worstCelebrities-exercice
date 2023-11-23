@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 const LikesCard = () => {
 
     const [likes, setLikes] = useState (0)
@@ -19,3 +20,19 @@ const LikesCard = () => {
 }
 
 export default LikesCard;
+
+
+// const LikesCard = () => {
+//   const [isActive, setIsActive] = useState (false);
+
+//   const toggleClass = () =>{
+//       setIsActive(!isActive)
+//   }
+//   return(
+//       <div>
+//           <button className={isActive?'maClasseActive':'maClasse'} onClick={toggleClass}>Toggle Classe</button>
+//       </div>
+//   )
+// }
+
+// export default LikesCard;

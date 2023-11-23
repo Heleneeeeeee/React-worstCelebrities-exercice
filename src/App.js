@@ -7,6 +7,7 @@ import TvSpeakersPage from "./page/TvSpeakersPage";
 import CopyrightPage from "./page/CopyrightPage";
 import FromMessagePage from "./page/FormMessagePage";
 import LikesPage from "./page/LikesPage";
+import CocktailsPage from "./page/CocktailsPage";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/copyrightpage" element={<CopyrightPage />} />
         <Route path="/formmessagepage" element={<FromMessagePage />} />
         <Route path="/likespage" element={<LikesPage />} />
+        <Route path="/cocktailspage" element={<CocktailsPage />} />
       </Routes>
     </BrowserRouter>
       
