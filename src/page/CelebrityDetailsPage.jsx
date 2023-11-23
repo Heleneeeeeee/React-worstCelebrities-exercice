@@ -3,6 +3,7 @@ import { shittyStars } from "../utils/celebrities-utils";
 import "./CelebrityDetailsPage.scss";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
+import LikesCard from "../component/LikesCard";
 const CelebritiesPage = () => {
 
     const {id} = useParams ()
@@ -12,7 +13,7 @@ const CelebritiesPage = () => {
     const celebrityfound = shittyStars.find((star) =>{
         return star.id == id;
     })
-
+ console.log()
     return (
         <>
         <Header />
@@ -27,7 +28,9 @@ const CelebritiesPage = () => {
                         <p className="textBio"><span>Sa Bio:</span> <br />{celebrityfound.bio}</p>
                         <p>Article publié le {celebrityfound.publishedAt}</p>
                     </div>
+                    <LikesCard />
                 </article>
+                
             </>
             ) : (
             <p> Célébrité non trouvée</p>

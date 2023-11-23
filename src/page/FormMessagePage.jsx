@@ -14,12 +14,12 @@ const FromMessagePage = () => {
             Message
                 <input onChange={handleMessageForm} type="text" name="message"/>
             </label>
-                <p>Vous avez envoyé:"{message}"</p>
+            <p>Vous avez envoyé:"{message}"</p>
         </form>
     )
 }
 
 export default FromMessagePage;
 
-// J'utilise la fonction useState dont ma variable initiale à pour valeur une chaîne de caractère vide et qui sera recharger à chaque changement d'état
+// J'utilise la fonction useState dont ma variable initiale à pour valeur une chaîne de caractère vide et qui sera rechargeée et modifiée à chaque changement d'état
 // Je déclare ensuite un event dans mon input "message" afin de récupérer sa valeur qui sera ensuite afficher dans la balise <p>
